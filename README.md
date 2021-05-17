@@ -17,7 +17,12 @@
             "blurb": "Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery. But after centuries of imprisonment, Aatrox was the first to find...",
             
 
-- **Wireframes**:  https://lucid.app/lucidchart/fa848cd1-ea81-495b-bb36-57df26735701/edit?beaconFlowId=22BEC776ACDF9E3A&invitationId=inv_72a57a72-0c1c-4698-9a26-e8a1d20f34c1&page=0_0#
+- **Wireframes**:  
+
+https://lucid.app/lucidchart/fa848cd1-ea81-495b-bb36-57df26735701/edit?viewport_loc=-430%2C6%2C2720%2C1362%2C0_0&invitationId=inv_72a57a72-0c1c-4698-9a26-e8a1d20f34c1
+
+
+
 - **MVP**: search by champion name through a drop down button and connecting name of champs to thaer img for easier search, being able to opne the web page in phone,ipad and pc 
 - **Post-MVP**: css design on champions cards & brand design on their info box, have a brand design on the websites background, reemoving rendered data from the screen & replacing it with new data
 - **Goals**:
