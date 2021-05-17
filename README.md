@@ -58,10 +58,14 @@
 - **MVP**: AN input section, a search botton, css design 
 - **Post-MVP**: css design that references the in game design 
 - **Goals**:
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs |  |
-| Working with API | H | 3hrs| 2.5hrs | |
-| Total | H | 6hrs| 5hrs | |
+| Component   | Priority | Estimated Time | Time Invested | Actual Time |
+| ---         | :---:    |  :---: | :---: | :---: |
+| Adding Form | H        | 3hrs| |  |
+| Working API | H        | 3 | |
+|find api imgs| H        |3     ||
+|css&styling|low|3||
+
+| Total        | H        |  6hrs|  | |
+
 
 - **Priority Matrix**: https://app.conceptboard.com/board/s548-nbq1-yux6-eb2i-a1to
