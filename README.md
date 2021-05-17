@@ -22,15 +22,14 @@
 - **Post-MVP**: css design on champions cards & brand design on their info box, have a brand design on the websites background, reemoving rendered data from the screen& rendering new dtata on the screen 
 - **Goals**:
 - 
--   Day | Deliverable | Status
+|  Day | Deliverable | Status
 |---|---| ---|
 |May 14-16| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
 |May 17| Project Approval / Core Application Structure (HTML, CSS, etc.) | Incomplete
 |May 18| Pseudocode / actual code | Incomplete
 |May 19| Initial Clickable Model  | Incomplete
-|May 20| MVP | Incomplete 
+|May 20| MVP | Incomplete
 |May 21| Presentations | Incomplete
-
 
 - 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
