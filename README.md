@@ -25,7 +25,6 @@
 | Adding boilerplate | H | 3hrs| 3.5hrs | 3.5hrs |
 | creating a dropdown button | H | 3hrs| 3.5hrs | 3.5hrs |
 | removing rendered data | H | 3hrs| 3.5hrs | 3.5hrs |
-
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
 | Total | H | 6hrs| 5hrs | 5hrs |
 
