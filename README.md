@@ -23,7 +23,7 @@ https://lucid.app/lucidchart/fa848cd1-ea81-495b-bb36-57df26735701/edit?viewport_
 
 
 
-- **MVP**: search by champion name through a drop down button and connecting name of champs to thaer img for easier search, being able to opne the web page in phone,ipad and pc 
+- **MVP**: creat a profile for champion, search by champion name through a drop down button and connecting name of champs to thaer img for easier search,remove the search results, being able to opne the web page in phone,ipad and pc 
 - **Post-MVP**: css design on champions cards & brand design on their info box, have a brand design on the websites background, reemoving rendered data from the screen & replacing it with new data
 - **Goals**:
 - 
