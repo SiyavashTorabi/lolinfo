@@ -16,17 +16,18 @@
             "info": {
 
 - **Wireframes**:  https://lucid.app/lucidchart/fa848cd1-ea81-495b-bb36-57df26735701/edit?beaconFlowId=22BEC776ACDF9E3A&invitationId=inv_72a57a72-0c1c-4698-9a26-e8a1d20f34c1&page=0_0#
-- **MVP**: search by champion , removedata on screen dtat 
-- **Post-MVP**: css design on champion card
+- **MVP**: search by champion name through a drop down button, being able to opne the web page in phone,tablet and pc 
+- **Post-MVP**: css design on champions cards, have a brand design on the websites background, reemoving rendered data from the screen& rendering ne dtata on the screen 
 - **Goals**:
+- 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
 | Adding boilerplate | H | 3hrs| 3.5hrs | 3.5hrs |
 | creating a dropdown button | H | 3hrs| 3.5hrs | 3.5hrs |
-| removing rendered data | H | 3hrs| 3.5hrs | 3.5hrs |
+| removing rendered data | H | 3hrs | 3.5hrs | 3.5hrs |
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Total | H | 6hrs | 5hrs | 5hrs |
 
 
 
