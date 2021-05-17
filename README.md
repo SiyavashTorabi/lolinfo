@@ -36,13 +36,17 @@
 | --- | :---: |  :---: | :---: | :---: |
 | Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
 | Adding boilerplate | H | 3hrs| 3.5hrs | 3.5hrs |
+| Adding bar for web info,search champ,link to my github | H | 3hrs| 3.5hrs | 3.5hrs |
 | creating a dropdown button | H | 3hrs| 3.5hrs | 3.5hrs |
 | removing rendered data | H | 3hrs | 3.5hrs | 3.5hrs |
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
 | find and connetct img to dtat | H | 3hrs| 3.5hrs | 3.5hrs |
 | brand designing info cards  | H | 3hrs| 3.5hrs | 3.5hrs |
 | brand designing we background | H | 3hrs| 3.5hrs | 3.5hrs |
+| adding footer with link and logo to my github | H | 3hrs| 3.5hrs | 3.5hrs |
 | fixing we functionally on other devices | H | 3hrs| 3.5hrs | 3.5hrs |
+| creating presentations script | H | 3hrs| 3.5hrs | 3.5hrs |
+| debuging & cleaning the code | H | 3hrs| 3.5hrs | 3.5hrs |
 | Total | H | 40 | 5hrs | 5hrs |
 
 
