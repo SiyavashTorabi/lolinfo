@@ -3,8 +3,10 @@ const CHAMP_IMG_URL = "http://ddragon.leagueoflegends.com/cdn/11.10.1/img/champi
 
 
 const selectTag = document.querySelector('select')
+
 const form = document.querySelector('form')
 const dataContainer = document.querySelector('#data-container')
+
 const getChampList = async () => {
  
   try {
@@ -13,8 +15,7 @@ const getChampList = async () => {
     const champListObj = response.data.data
     const champListArr = Object.values(champListObj)
   
-    console.log(champListArr)
-    setOptions(ChampList)
+    setOptions(champListArr)
   } catch (error) {
     console.error(error)
   }
@@ -24,13 +25,21 @@ getChampList()
 
 
 function setOptions(list) {
-  list.forEach((champ) => {
-    let optionTag = document.createElement('option')
-    optionTag.textContent = champ
-    optionTag.value = champ
-    selectTag.append(optionTag)
-  })
+  // console.log(list)
+  for (let i = 0; i < list.length; i++) {
+
+  console.log(list[i].id)
+    let option = document.createElement('option')
+   
+    option.textContent = list[i].id
+    option.value = list[i].id
+    console.log(option)
+    selectTag.append(option)
+  }
 }
+
+ 
+
 // function getValue(e) {
 //   e.preventDefult()
 //   let optionValue = selectTag.value
