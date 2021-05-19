@@ -14,13 +14,24 @@ const getChampList = async () => {
     // const champList = Object.keys(response.data)
     const champListObj = response.data.data
     const champListArr = Object.values(champListObj)
-  
+    //console.log(response.data.data.Aatrox)
     setOptions(champListArr)
+   // champS(optionValue)
   } catch (error) {
     console.error(error)
   }
 }
 getChampList()
+
+function champS(placeholder) {
+  
+  
+
+  let championN = `
+<h1>${champListObj.data.data.Aatrox}hello</h1>
+`
+}
+  
 
 
 
@@ -38,25 +49,27 @@ function setOptions(list) {
   }
 }
 
- 
+ //////////////
 
-// function getValue(e) {
-//   e.preventDefult()
-//   let optionValue = selectTag.value
-//   removeElements(dataContainer)
-//   getChampList(optionValue)
-//   return optionValue
-// }
-// form.addEventListener('submit', getValue)
-// async function getChampImage(champValue) {
-//   const URL = `http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champValue}_0.jpg`
-//   try {
-//     const imageURL = await axios.get(URL)
-//     appendImage(imageURL.data.data)
-//   } catch (error) {
-//     console.error(error)
-//   }
-// }
+function getValue(e) {
+  e.preventDefult()
+  let optionValue = selectTag.value
+  removeElements(dataContainer)
+  getChampList(optionValue)
+  return optionValue
+}
+/////
+form.addEventListener('submit', getValue)
+async function getChampImage(optionValue) {
+  const URL = `http://ddragon.leagueoflegends.com/cdn/11.10.1/img/${optionValue}_0.jpg`
+  try {
+    const imageURL = await axios.get(URL)
+ (`imageURL.data.${optionValue}.image`)
+    console.log(data.data)
+  } catch (error) {
+    console.error(error)
+  }
+}
 
 // function appendImage(URL) {
 //   const imageTag = document.createElement('img')
