@@ -1,5 +1,5 @@
 const CHAMP_LIST_URL = "http://ddragon.leagueoflegends.com/cdn/11.10.1/data/en_US/champion.json"
-const CHAMP_IMG_URL = "http://ddragon.leagueoflegends.com/cdn/11.10.1/img/champion/"
+
 
 
 const selectTag = document.querySelector('select')
@@ -54,7 +54,7 @@ function setOptions(list) {
 function getValue(e) {
   e.preventDefault()
   let optionValue = selectTag.value
-  // removeElements(dataContainer)
+  removeElements(dataContainer)
   console.log(optionValue)
   getChampData(optionValue)
   // return optionValue
@@ -76,14 +76,20 @@ async function getChampData(championN) {
 ////
 function appendChamp(champ,championName) {
   console.log(champ)
+  // appending a title (h2 elmt) to the DOM 
   const h2 = document.createElement('h2')
   h2.textContent = champ[championName].title
   dataContainer.append(h2)
+  // appending blurb (p elmt) to DOM 
   const pTag = document.createElement('p')
   pTag.textContent = champ[championName].blurb
-  // console.log(pTag)
   dataContainer.append(pTag)
+  // appending img to the DOM
 
+  const champUrl = `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championName}_0.jpg`
+  const img = document.createElement('img')    
+  img.setAttribute('src', champUrl)
+  dataContainer.append(img)
 }
 // function appendImage(URL) {
 //   const imageTag = document.createElement('img')
@@ -92,8 +98,8 @@ function appendChamp(champ,championName) {
 // }
 
 
-// function removeElements(element) {
-//   while (element.lastChild) {
-//     element.removeChild(element.lastChild)
-//   }
-// }
+function removeElements(element) {
+  while (element.lastChild) {
+    element.removeChild(element.lastChild)
+  }
+}
