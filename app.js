@@ -39,12 +39,12 @@ function setOptions(list) {
   // console.log(list)
   for (let i = 0; i < list.length; i++) {
 
-  console.log(list[i].id)
+  // console.log(list[i].id)
     let option = document.createElement('option')
    
     option.textContent = list[i].id
     option.value = list[i].id
-    console.log(option)
+    // console.log(option)
     selectTag.append(option)
   }
 }
@@ -52,25 +52,39 @@ function setOptions(list) {
  //////////////
 
 function getValue(e) {
-  e.preventDefult()
+  e.preventDefault()
   let optionValue = selectTag.value
-  removeElements(dataContainer)
-  getChampList(optionValue)
-  return optionValue
+  // removeElements(dataContainer)
+  console.log(optionValue)
+  getChampData(optionValue)
+  // return optionValue
 }
 /////
 form.addEventListener('submit', getValue)
-async function getChampImage(optionValue) {
-  const URL = `http://ddragon.leagueoflegends.com/cdn/11.10.1/img/${optionValue}_0.jpg`
+
+async function getChampData(championN) {
+  const URL = `http://ddragon.leagueoflegends.com/cdn/11.10.1/data/en_US/champion/${championN}.json`
   try {
-    const imageURL = await axios.get(URL)
- (`imageURL.data.${optionValue}.image`)
-    console.log(data.data)
+    const response = await axios.get(URL)
+ 
+    appendChamp(response.data.data, championN)
+    console.log(response.data.data)
   } catch (error) {
     console.error(error)
   }
 }
+////
+function appendChamp(champ,championName) {
+  console.log(champ)
+  const h2 = document.createElement('h2')
+  h2.textContent = champ[championName].title
+  dataContainer.append(h2)
+  const pTag = document.createElement('p')
+  pTag.textContent = champ[championName].blurb
+  // console.log(pTag)
+  dataContainer.append(pTag)
 
+}
 // function appendImage(URL) {
 //   const imageTag = document.createElement('img')
 //   imageTag.setAttribute('src', URL)
