@@ -77,12 +77,12 @@ async function getChampData(championN) {
 function appendChamp(champ,championName) {
   console.log(champ)
   // appending a title (h2 elmt) to the DOM 
-  const h2 = document.createElement('h2')
-  h2.textContent = champ[championName].title
-  dataContainer.append(h2)
+  const h1 = document.createElement('h1')
+  h1.textContent = champ[championName].title
+  dataContainer.append(h1)
   // appending blurb (p elmt) to DOM 
   const pTag = document.createElement('p')
-  pTag.textContent = champ[championName].blurb
+  pTag.textContent = champ[championName].lore
   dataContainer.append(pTag)
   // appending img to the DOM
 
@@ -90,6 +90,16 @@ function appendChamp(champ,championName) {
   const img = document.createElement('img')    
   img.setAttribute('src', champUrl)
   dataContainer.append(img)
+  ///// appending status to DOM
+  
+  const h3 = document.createElement('h3')
+  h3.textContent =champ[championName].allytips
+  dataContainer.append("ally-Tips: ", h3)
+  /// appending champ tags to DOM
+  const h2 = document.createElement('h2')
+  h2.textContent = champ[championName].enemytips
+  dataContainer.append("Enemy-tips",h2)
+
 }
 // function appendImage(URL) {
 //   const imageTag = document.createElement('img')
@@ -103,3 +113,17 @@ function removeElements(element) {
     element.removeChild(element.lastChild)
   }
 }
+//////
+var body = $('body');
+var colors = ['Forest', 'green', 'Lime', 'Kelly', 'Teal', 'Hunter', 'blue violet'];
+var currentIndex = 0;
+setInterval(function () {
+   body.css({
+     backgroundColor: colors[currentIndex]
+   });
+   if (!colors[currentIndex]) {
+       currentIndex = 0;
+   } else {
+       currentIndex++;
+   }
+}, 100);
