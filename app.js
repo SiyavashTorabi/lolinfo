@@ -111,10 +111,11 @@ function removeElements(element) {
     element.removeChild(element.lastChild)
   }
 }
-//////
-var body = $('body');
-var colors = ['Forest', 'green', 'Lime', 'Teal'];
-var currentIndex = 0;
+////// this code came from
+/// https://stackoverflow.com/questions/41099739/how-to-change-background-color-continuously-without-refreshing-the-page
+let body = $('body');
+let colors = ['Forest', 'green', 'Lime', 'Teal'];
+let currentIndex = 0;
 setInterval(function () {
    body.css({
      backgroundColor: colors[currentIndex]
