@@ -1,4 +1,4 @@
-const CHAMP_LIST_URL = "http://ddragon.leagueoflegends.com/cdn/11.10.1/data/en_US/champion.json"
+const CHAMP_LIST_URL = "https://ddragon.leagueoflegends.com/cdn/11.10.1/data/en_US/champion.json"
 
 
 
@@ -37,7 +37,7 @@ function champS(placeholder) {
 
 function setOptions(list) {
   // console.log(list)
-  const THUMBURL = "http://ddragon.leagueoflegends.com/cdn/11.10.1/img/champion/"
+  const THUMBURL = "https://ddragon.leagueoflegends.com/cdn/11.10.1/img/champion/"
   for (let i = 0; i < list.length; i++) {
     const option = `
     <option value="${list[i].id}">
@@ -64,7 +64,7 @@ function getValue(e) {
 form.addEventListener('submit', getValue)
 
 async function getChampData(championN) {
-  const URL = `http://ddragon.leagueoflegends.com/cdn/11.10.1/data/en_US/champion/${championN}.json`
+  const URL = `https://ddragon.leagueoflegends.com/cdn/11.10.1/data/en_US/champion/${championN}.json`
   try {
     const response = await axios.get(URL)
  
@@ -87,7 +87,7 @@ function appendChamp(champ,championName) {
   dataContainer.append(pTag)
   // appending img to the DOM
 
-  const champUrl = `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championName}_0.jpg`
+  const champUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championName}_0.jpg`
   const img = document.createElement('img')    
   img.setAttribute('src', champUrl)
   dataContainer.append(img)
