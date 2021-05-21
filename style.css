@@ -1,10 +1,17 @@
 body {
+  color: aliceblue;
 text-align: center;
 transition: 600ms ease;
 justify-content: center;
 grid-column: auto;
 columns: auto;
+background-image: url(lolb.jpeg);
+}
+#data-container{
 
+/* background-image: url(lolb.jpeg); */
+
+background-color: black;
 }
 h1,h2,p,h3{
 text-align: center;
@@ -16,6 +23,9 @@ h2, h3 {
 font-size: large;
 
 }
+h1{
+  background-color: black;
+}
 p{
   display: inline-block;
   text-align: center;
@@ -24,9 +34,9 @@ p{
 }
 
 img {
-height: 500px;
-width: 600px;
-margin: 25px;
+height: auto;
+width: 100%;
+margin: 25px auto;
 padding: auto;
 }
 /* footer {
@@ -36,12 +46,13 @@ padding: auto;
     } */
 
     .icons {
+      background-color: rgb(255, 255, 255);
       display: inline-block;
       position: relative;
   width: 32px;
-  margin: 2px;
+  margin: 0 auto;
   height: 20px;
-  padding: 2px;
+  padding: auto;
 
  
     }
@@ -60,4 +71,7 @@ padding: auto;
       width: 100%;
       height: 2.5rem;            /* Footer height */
     }
-    
+    #Test{
+
+      background-color: blue;
+    }

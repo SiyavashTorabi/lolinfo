@@ -37,15 +37,27 @@ function champS(placeholder) {
 
 function setOptions(list) {
   // console.log(list)
+  const THUMBURL = "http://ddragon.leagueoflegends.com/cdn/11.10.1/img/champion/"
   for (let i = 0; i < list.length; i++) {
+    const option = `
+    <option value="${list[i].id}">
+      <img src="${THUMBURL}${list[i].id}.png">
+      <div id="Test"></div>
+        ${list[i].id}
+      </option>
+      `
+    selectTag.innerHTML += option
+    
+// selectTag.insertAdjacentHTML('afterend', option)
 
   // console.log(list[i].id)
-    let option = document.createElement('option')
+    // let option = document.createElement('option')
    
-    option.textContent = list[i].id
-    option.value = list[i].id
+    // option.textContent = list[i].id
+    // option.value = list[i].id
     // console.log(option)
-    selectTag.append(option)
+    // selectTag.append(option)
+    // console.log(list[i].image.group)
   }
 }
 
@@ -93,12 +105,25 @@ function appendChamp(champ,championName) {
   ///// appending status to DOM
   
   const h3 = document.createElement('h3')
-  h3.textContent =champ[championName].allytips
-  dataContainer.append("ally-Tips: ", h3)
+  h3.textContent = champ[championName].allytips
+  const allyTips = document.createElement('p')
+  allyTips.textContent = "allyTips"
+  dataContainer.append("ally tips")
+  dataContainer.append(h3)
   /// appending champ tags to DOM
   const h2 = document.createElement('h2')
   h2.textContent = champ[championName].enemytips
-  dataContainer.append("Enemy-tips",h2)
+  dataContainer.append("Enemy tips", h2)
+//   const champ = `
+//   <h1>${champ[championName].title}</h1>
+//   <p>${champ[championName].lore}</p>
+//   <img src= "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championName}_0.jpg"/>
+//   <h3>ally Tips</h3>
+//   <p>${champ[championName].allytips}</p>
+//   <h3>enemy Tips</h3>
+//   <p>${champ[championName].enemytips}</p>
+//   `
+// dataContainer.innerHTML += champ
 
 }
 // function appendImage(URL) {
