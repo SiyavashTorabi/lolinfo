@@ -1,10 +1,13 @@
+https://siyavashtorabi.github.io/lolinfo/
+
+
 # lolinfo- **App Title**: lolinfo
-- **App Description**: searchs for league of legends (an online video game) champions info for an easy access to thair in game ifo and stories.
-- **API**: end point http://ddragon.leagueoflegends.com/cdn/10.6.1/data/en_US/champion.json
-- ** api document page ** https://developer.riotgames.com/docs/lol
-- 
-- **API Snippet**: 
-- 
+ **App Description**: searchs for league of legends (an online video game) champions info for an easy access to thair in game ifo and stories.
+ **API**: end point http://ddragon.leagueoflegends.com/cdn/10.6.1/data/en_US/champion.json
+ ** api document page ** https://developer.riotgames.com/docs/lol
+ 
+ **API Snippet**: 
+ ```json
     "format": "standAloneComplex",
     "version": "10.6.1",
     "data": {
@@ -15,7 +18,7 @@
             "name": "Aatrox",
             "title": "the Darkin Blade",
             "blurb": "Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery. But after centuries of imprisonment, Aatrox was the first to find...",
-            
+```    
 
 - **Wireframes**:  
 
@@ -56,4 +59,22 @@ https://lucid.app/lucidchart/fa848cd1-ea81-495b-bb36-57df26735701/edit?viewport_
 
 
 
-- **Priority Matrix**: https://app.conceptboard.com/board/m3k7-90zn-p0py-144s-kfga
+**Priority Matrix**: https://app.conceptboard.com/board/m3k7-90zn-p0py-144s-kfga
+## Code Snippet 
+```js 
+////// this code came from
+/// https://stackoverflow.com/questions/41099739/how-to-change-background-color-continuously-without-refreshing-the-page
+let body = $('body');
+let colors = ['Forest', 'green', 'Lime', 'Teal'];
+let currentIndex = 0;
+setInterval(function () {
+   body.css({
+     backgroundColor: colors[currentIndex]
+   });
+   if (!colors[currentIndex]) {
+       currentIndex = 0;
+   } else {
+       currentIndex++;
+   }
+}, 100);
+```
