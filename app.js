@@ -47,17 +47,6 @@ function setOptions(list) {
       </option>
       `
     selectTag.innerHTML += option
-    
-// selectTag.insertAdjacentHTML('afterend', option)
-
-  // console.log(list[i].id)
-    // let option = document.createElement('option')
-   
-    // option.textContent = list[i].id
-    // option.value = list[i].id
-    // console.log(option)
-    // selectTag.append(option)
-    // console.log(list[i].image.group)
   }
 }
 
@@ -114,24 +103,8 @@ function appendChamp(champ,championName) {
   const h2 = document.createElement('h2')
   h2.textContent = champ[championName].enemytips
   dataContainer.append("Enemy tips", h2)
-//   const champ = `
-//   <h1>${champ[championName].title}</h1>
-//   <p>${champ[championName].lore}</p>
-//   <img src= "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championName}_0.jpg"/>
-//   <h3>ally Tips</h3>
-//   <p>${champ[championName].allytips}</p>
-//   <h3>enemy Tips</h3>
-//   <p>${champ[championName].enemytips}</p>
-//   `
-// dataContainer.innerHTML += champ
 
 }
-// function appendImage(URL) {
-//   const imageTag = document.createElement('img')
-//   imageTag.setAttribute('src', URL)
-//   dataContainer.append(imageTag)
-// }
-
 
 function removeElements(element) {
   while (element.lastChild) {
@@ -140,7 +113,7 @@ function removeElements(element) {
 }
 //////
 var body = $('body');
-var colors = ['Forest', 'green', 'Lime', 'Kelly', 'Teal', 'Hunter', 'blue violet'];
+var colors = ['Forest', 'green', 'Lime', 'Teal'];
 var currentIndex = 0;
 setInterval(function () {
    body.css({
