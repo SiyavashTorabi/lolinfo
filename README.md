@@ -33,11 +33,11 @@ https://lucid.app/lucidchart/fa848cd1-ea81-495b-bb36-57df26735701/edit?viewport_
 |  Day | Deliverable | Status
 |---|---| ---|
 |May 14-16| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|May 17| Project Approval / Core Application Structure (HTML, CSS, etc.) | Incomplete
-|May 18| Pseudocode / actual code | Incomplete
-|May 19| Initial Clickable Model  | Incomplete
-|May 20| MVP | Incomplete
-|May 21| Presentations | Incomplete
+|May 17| Project Approval / Core Application Structure (HTML, CSS, etc.) | complete
+|May 18| Pseudocode / actual code | complete
+|May 19| Initial Clickable Model  | complete
+|May 20| MVP | complete
+|May 21| Presentations | complete
 
 - 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
